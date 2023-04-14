@@ -169,7 +169,7 @@ int main()
         }*/
         display(array);
 
-        //no necesito averiguar si es impar, por que si no es impar, me redondea pa' abajo, eso me beneficia, por que justo hasta ahí comparten el mismo c+odigo impares y pares, pero ya después lo impares tienen un proceso más
+        //no necesito averiguar si es impar, por que si no es impar, me redondea pa' abajo, eso me beneficia, por que justo hasta ahí comparten el mismo código impares y pares, pero ya después lo impares tienen un proceso más
         for(i=0;i<(size_of_word/2);++i)//el número de comparaciones es la mitad del número de letras
         {
             comparar1=dequeueFront(array, &front, &rear);//en una cola normal o en una cola doble es normal quitar de front
