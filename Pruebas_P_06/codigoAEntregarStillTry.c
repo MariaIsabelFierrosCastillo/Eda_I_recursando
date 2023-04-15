@@ -105,11 +105,10 @@ int contador_de_letras(char *arr)
             c++;
         }
     }
-    
     return c;
 }
 
-int count(char *arr)//devuelve cuantos luagres hay ocupados
+int count(char *arr)//devuelve cuantos lugares hay ocupados
 //entre los muchos errores que he cometido es no inicializar el arreglo/cola
 {
     int c=0, i;
@@ -126,7 +125,8 @@ void display(char *arr)
 {
     int i;
 
-    printf("\n\trente:\t");
+    printf("\nEstá es la cola doble.\n");
+    printf("\tfrente:\t");
     for(i=0; i<size_of_word; i++)
         printf("  %c", arr[i]);
     printf("\t:parte trasera\n");
@@ -176,18 +176,17 @@ int main()
             comparar2=dequeueRear(array, &front, &rear);
             if(comparar1!=comparar2)//si no entra simplemente continua
             {
-                printf("La palabra no es palíndroma.\n");
+                printf("No es palíndromo la palabra %s\n", palabra);
                 printf("Encontramos al menos un error: ");
                 printf("Las letras %c y %c de tu palara no coinciden\n", comparar1, comparar2);
                 printf("Podría haber más errores o no.\n");
                 return 1;
             }
         }
-            printf("La palabra es palíndroma");//nunca encontró un error
-        else/*es impar, el problema es que cada vez de dequeues quitas, por lo que si el de en medio lo quitas con por ejmeplo dqueueFront, el deuqueRear lo va a identificar como vacía ya no tendrá que quitar*/
-        {
+        //en las palabras impares no necesitas comparar con nada la letra impar
+            printf("Es palíndromo la palabra %s\n", palabra);//nunca encontró un error
+        /*es impar, el problema es que cada vez de dequeues quitas, por lo que si el de en medio lo quitas con por ejemplo dqueueFront, el deuqueRear lo va a identificar como vacía ya no tendrá que quitar*/
 
-        }
         free(array);
     }
     //confío en mi variable size_of_word
