@@ -7,7 +7,7 @@ def recur_fibo(n):
 nterms=13
 
 if nterms<=0:
-    print("Inrese un n`mero entero posutivo")
+    print("Inrese un número entero positivo")
 else:
     print("Secuencia Fibonacci")
     for i in range(nterms):
