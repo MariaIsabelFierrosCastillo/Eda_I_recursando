@@ -8,6 +8,8 @@ def decimal_a_binario(n):
         #print("to {}".format(n%2))
         return decimal_a_binario(n // 2) + str(n % 2) #es como si los 1's y 0's no son números sino cadenas, dejame aclararte que si son números, pero a lo que me refiero es que al ponerles este str los conviertes en cadenas, y el+ pues es complementario para unirlas
         #empezamos regresando '', la cual es una cadena, de ahí puros '0' o '1', termina siendo una cadena todo
+    
+    #a diferencia de la función fibo, en está función vamos acumulando una cadena, el ultimo return que se realiza(que en realidad es de la primera vez que se mandó a llamar a la función) regresará una cadena ya completita
 
 if __name__ == '__main__':
     print('Bienvenido, puede realizar las siguientes operaciones:\n')
