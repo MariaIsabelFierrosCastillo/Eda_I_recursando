@@ -30,6 +30,6 @@ if __name__ == '__main__':
             print('\n\033[1;32m' + decimal_a_binario(n) + '\033[0m') #pa' imprimir el resultado de verde
         elif opcion == 2:
             n = int(input('\n\033[1;34mIngrese el número entero N: \033[0m'))
-            print('\n\033[1;32m' + ' '.join(map(str, fibonacci_inverso(n))) + '\033[0m') 
+            print('\n\033[1;32m' + ' '.join(map(str, fibonacci_inverso(n))) + '\033[0m') #pone verde la salida
         elif opcion == 3:
             exit()
