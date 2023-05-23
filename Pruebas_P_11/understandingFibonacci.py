@@ -12,7 +12,7 @@ def fibonacci_inverso(n): #trabajamos con listas
             print(i)
             print("Hola {}".format(fiboncillo[-1]))#es curioso como las tratamos como la estructura array in C
             print("Adiós {}".format(fiboncillo[-2]))
-            fiboncillo.append(fiboncillo[-1] + fiboncillo[-2]) #esta aprte lo que hace es tomar los dos últimos elementos y sumarlos, sin embargo no sabemos que tanto se nos va a extender la lista, así que una forma inteligente de averiguar cuales son los dos últimos elementos es usar índices nengativos, 
+            fiboncillo.append(fiboncillo[-1] + fiboncillo[-2]) #esta parte lo que hace es tomar los dos últimos elementos y sumarlos, sin embargo no sabemos que tanto se nos va a extender la lista, así que una forma inteligente de averiguar cuales son los dos últimos elementos es usar índices nengativos, 
         return fiboncillo[::-1] #al parecer es para regresar la lista al revés
         #es para invertir la lista, hay otras formas además de esta, como la función reverse() o reversed() quién sabe
 
