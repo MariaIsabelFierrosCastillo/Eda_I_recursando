@@ -1,5 +1,5 @@
 def recur_fibo(n):
-    if n<=1: #se me hace muy inteligente, para elemento 1(más claro primera iteración, donde i vale 0)  de la serie, imprimir 0, para 2 elementos (más claro segunda iteración, donde i vale 1) de la serie imprimir 1
+    if n<=1: #se me hace muy inteligente, para elemento 0(primera iteración, donde i vale 0)(raro, pero aquí elemento 0 es meramente así por que nuestra i es 0, y la i es para imrpimir cantidad de elementos)  de la serie, imprimir 0, para 2 elementos (más claro segunda iteración, donde i vale 1) de la serie imprimir 1
         return n
     else:
         return(recur_fibo(n-1))+ recur_fibo(n-2) #escencialmente aquí esta la instrucción, básicamente significa sumar el elemento anterior(último) con el anterior del anterior(penúltimo)
