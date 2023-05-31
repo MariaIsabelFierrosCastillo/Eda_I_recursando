@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import random
 
-time=0
+times=0
 
 def insertionSort_graph(n_lista):
     global times
